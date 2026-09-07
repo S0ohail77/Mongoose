@@ -1,0 +1,7 @@
+#Models
+
+model in mongoose is a class with which we construct documents.
+ --> const User = mongoose.model("User", userSchema);
+
+after implementation mongoose automatically convert uppercase into smaller and singular into plural.
+e.g -> User = users
