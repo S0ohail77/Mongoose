@@ -1,0 +1,15 @@
+#Insert Multiple
+
+User.insertMany([
+    {name : "Gwen", age : 19, email : "gwen@gmail.com"},
+    {name : "Tobey", age : 30, email : "tobey@gmail.com"},
+    {name : "Andrew", age : 26, email : "andrew@gmail.com"}
+]).then((res) =>{
+    console.log(res);
+});
+
+
+*Note :- Mongoose uses Operation Buffering.
+
+Mongoose lets you start using your model immediately,
+without waiting for mongoose to establish a connection to MongoDB.
