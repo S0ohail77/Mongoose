@@ -1,0 +1,11 @@
+#Schema 
+
+Schema defines the shape of the documents within that collection.
+
+Ex -
+
+const userSchema = new mongoose.Schema({
+    name : String,
+    email : String,
+    age : Number
+});
