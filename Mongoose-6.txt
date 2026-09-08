@@ -25,3 +25,7 @@ Ex -
 
 Ex -
 User.findOne({})
+
+*Find value using id 
+Ex-
+User.findById("123abc")
