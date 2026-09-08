@@ -1,0 +1,14 @@
+#Fnd in Mongoose
+
+Model.find() // returns a Query object (thennable)
+
+*Mongoose Queries are not promises. But they have a .then()
+
+
+ User.find({}).then((res)=>{
+    console.log(res);})
+    .catch((err)=>{
+        console.log(err);
+    })
+
+*we can also use conditional statement with Find()
