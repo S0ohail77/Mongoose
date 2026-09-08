@@ -12,3 +12,11 @@ Model.find() // returns a Query object (thennable)
     })
 
 *we can also use conditional statement with Find()
+
+
+Ex -
+ User.find({age : {$gte : 24}}).then((res)=>{
+    console.log(res);})
+    .catch((err)=>{
+        console.log(err);
+    })
