@@ -20,3 +20,8 @@ Ex -
     .catch((err)=>{
         console.log(err);
     })
+
+*To Find one value 
+
+Ex -
+User.findOne({})
