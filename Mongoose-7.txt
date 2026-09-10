@@ -1,0 +1,20 @@
+# Update in Mongoose
+
+*Update One ->
+Model.updateOne({})
+
+User.updateOne({ name : "Andrew"}, {age : 28}).then((res)=>{
+    console.log(res);
+}).catch((err)=>{
+    console.log(err);
+})
+
+*Updaate Many ->
+Model.updateMany({})
+
+User.updateMany({age :{$gt : 22}}, {age : 29}).then((res)=>{
+    console.log(res);
+}).catch((err)=>{
+    console.log(err);
+})
+
