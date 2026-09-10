@@ -1,0 +1,26 @@
+#Delete
+
+*Model.deleteOne({})//return count
+
+ User.deleteOne({name : "Andrew"}).then((res)=>{
+    console.log(res);
+ })
+
+*Model.deleteMany({})//return count
+
+ User.deleteMany({age : 20}).then((res)=>{
+    console.log(res);
+ })
+
+
+*Find by id and delete
+
+ User.findByIdAndDelete('6a9ef4c64782de0f8e97fc08').then((res)=>{
+    console.log(res);
+ })
+
+*Find by one and delete
+
+User.findOneAndDelete('name : gwen').then((res)=>{
+    console.log(res);
+ })
