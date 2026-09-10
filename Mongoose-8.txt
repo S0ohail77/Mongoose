@@ -1,0 +1,22 @@
+#Update the value as well as print the value using find()
+
+*find and update one
+
+-> Model.findOneAndUpdate({})
+
+User.findOneAndUpdate({name : "Andrew"}, {age : 29}, {new : true}).then((res)=>{  //new  = if true, return the modified document rather than the original.
+    console.log(res);
+}).catch((err)=>{
+    console.log(err);
+})
+
+
+*find by id and update
+
+-> Model.findByIdAndUpdate({})
+
+User.findByIdAndUpdate({_id : '6a9ef4c64782de0f8e97fc0a'}, {age : 46}, {new : true}).then((res)=>{
+    console.log(res);
+}).catch((err)=>{
+    console.log(err);
+})
