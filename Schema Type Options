@@ -1,0 +1,9 @@
+*default --> print automaticaly without mentions beacause it is default.
+
+ex-->
+
+    discount : {
+        type : Number,
+        default : 0
+    }
+});
