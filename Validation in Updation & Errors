@@ -1,0 +1,10 @@
+*they all optionsn of validation they can't work on Updation. If you wants they work then set the value true of runValidaters.
+
+Here is the way to use Validaters and see the errors.
+-->
+
+Book.findByIdAndUpdate({ _id : '6aa44d9cf70a8a80b1f0aa0e'}, {price : -600}, {runValidators : true}).then((res)=>{
+    console.log(res);
+}).catch((err)=>{
+    console.log(err.errors.price.properties.message);
+})
